@@ -1,0 +1,10 @@
+<div>
+  <p>{{message()}}</p>
+  <p (click)="keyUpHandler()">You can click me</p>
+  @for(item of items(); track $index){
+    <div>{{item.name}}</div>
+    <div>{{item.description}}</div>
+    <div [class]="'some-space'"></div>
+  }
+</div>
+

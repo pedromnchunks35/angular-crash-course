@@ -1,0 +1,9 @@
+<div>
+  @for(post of posts(); track $index){
+    <div>{{post.id}}</div>
+    <div>{{post.title}}</div>
+    <div>{{post.userId}}</div>
+    <div>{{post.body}}</div>
+    <div [class]="'some-space'"></div>
+  }
+</div>
